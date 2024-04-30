@@ -63,19 +63,26 @@ const Home = () => {
             className="w-20"
           />
         </div>
-        <div className="h-screen ">
+        <div className="h-screen md:h-full ">
           <Image
             alt="jeep"
-            src="/jeepcar2.png"
+            src="/jeep-yellow.jpg"
             height={2500}
             width={2500}
-            className="h-full"
+            className="h-full hidden md:block bg-fixed bg-cover bg-no-repeat"
+          />
+          <Image
+            alt="jeep"
+            src="/jeep-phone.jpg"
+            height={2500}
+            width={2500}
+            className="h-full md:hidden bg-fixed bg-cover bg-no-repeat"
           />
           <div className="flex justify-center items-center">
-            <h1 className="absolute text-slate-50 text-center px-4  md:text-start text-5xl lg:text-7xl z-40 bottom-24 md:left-10">
-              Réservez votre Test Drive
+            <h1 className="absolute text-black text-center px-4 md:px-0  md:text-start text-5xl lg:text-7xl z-40 top-64 md:top-48 lg:top-[230px] xl:top-[300px]  lg:left-10 ">
+              Réservez votre <br /> Test Drive
             </h1>
-            <p className="absolute text-slate-50 text-center px-4 text-3xl lg:text-4xl z-40 bottom-12 md:bottom-10 md:left-10">
+            <p className="absolute text-black text-center px-4 md:px-0 text-3xl lg:text-4xl z-40 top-[362px] md:top-72 lg:top-[370px] xl:top-[450px] lg:left-10 ">
               dès maintenant.
             </p>
           </div>
@@ -85,23 +92,25 @@ const Home = () => {
         <Image
           className="bg-cover h-screen z-0 "
           alt="jeep"
-          src="/jeepcar.jpg"
+          src="/jeep-black.jpg"
           height={2500}
           width={2500}
         />
       </div>
-      <div className="relative grid grid-cols-3 lg:pl-5 h-screen justify-center items-center z-40 ">
-        <div className="lg:col-span-1 col-span-3">
+      <div className="relative grid grid-cols-2 lg:pl-5 h-screen justify-center items-center z-40 ">
+        <div className="lg:col-span-1"></div>
+
+        <div className="lg:col-span-1 col-span-2">
           <section className="p-6 text-slate-50">
             <form
               onSubmit={(e) => onSubmit(e)}
-              className="form container w-full max-w-xl p-8 mx-auto space-y-6 rounded-xl  shadow-2xl shadow-gray-900 backdrop-blur-md bg-slate-50/30"
+              className="form container w-full max-w-lg p-8 mx-auto space-y-6 rounded-xl  shadow-2xl shadow-gray-900 backdrop-blur-md bg-slate-50/30"
             >
               <h2 className="w-full text-center text-black text-3xl font-bold">
                 INSCRIPTION
               </h2>
               <div>
-                <label className="block mb-1 ml-1">Nom:</label>
+                <label className="block text-lg mb-1 ml-1">Nom:</label>
                 <input
                   name="Nom"
                   id="Nom"
@@ -111,7 +120,7 @@ const Home = () => {
                 />
               </div>
               <div>
-                <label className="block mb-1 ml-1">Prénom:</label>
+                <label className="block text-lg mb-1 ml-1">Prénom:</label>
                 <input
                   name="Prenom"
                   id="Prenom"
@@ -121,7 +130,7 @@ const Home = () => {
                 />
               </div>
               <div>
-                <label className="block mb-1 ml-1">Téléphone:</label>
+                <label className="block text-lg mb-1 ml-1">Téléphone:</label>
                 <input
                   name="Telephone"
                   id="Telephone"
@@ -131,7 +140,7 @@ const Home = () => {
                 />
               </div>
               <div>
-                <label className="block mb-1 ml-1">E-mail:</label>
+                <label className="block text-lg mb-1 ml-1">E-mail:</label>
                 <input
                   name="Email"
                   id="Email"
@@ -141,7 +150,7 @@ const Home = () => {
                 />
               </div>
               <div>
-                <label className="block mb-1 ml-1">
+                <label className="block text-lg mb-1 ml-1">
                   Intéressé par le modèle:
                 </label>
                 <input
@@ -157,7 +166,7 @@ const Home = () => {
                 <button
                   name="Name"
                   type="submit"
-                  className="w-full px-4 py-2 font-bold rounded shadow focus:outline-none  bg-amber-400 hover:bg-amber-300 text-gray-50"
+                  className="w-full px-4 py-2 hover:text-black font-bold rounded shadow focus:outline-none  bg-amber-400 hover:bg-amber-300 text-gray-50"
                 >
                   Envoyer
                 </button>
