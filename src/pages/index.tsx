@@ -53,6 +53,34 @@ const Home = () => {
   }
   return (
     <>
+      <div className="">
+        <div className="flex justify-center items-center h-20 bg-black">
+          <Image
+            alt="logo"
+            src="/logo-jeep.png"
+            height={1500}
+            width={1500}
+            className="w-20"
+          />
+        </div>
+        <div className="h-screen ">
+          <Image
+            alt="jeep"
+            src="/jeepcar2.png"
+            height={2500}
+            width={2500}
+            className="h-full"
+          />
+          <div className="flex justify-center items-center">
+            <h1 className="absolute text-slate-50 text-center px-4  md:text-start text-5xl lg:text-7xl z-40 bottom-24 md:left-10">
+              Réservez votre Test Drive
+            </h1>
+            <p className="absolute text-slate-50 text-center px-4 text-3xl lg:text-4xl z-40 bottom-12 md:bottom-10 md:left-10">
+              dès maintenant.
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="absolute">
         <Image
           className="bg-cover h-screen z-0 "
@@ -67,7 +95,7 @@ const Home = () => {
           <section className="p-6 text-slate-50">
             <form
               onSubmit={(e) => onSubmit(e)}
-              className="form container w-full max-w-xl p-8 mx-auto space-y-6 rounded-xl shadow-xl shadow-gray-600 backdrop-blur-md bg-slate-50/30"
+              className="form container w-full max-w-xl p-8 mx-auto space-y-6 rounded-xl  shadow-2xl shadow-gray-900 backdrop-blur-md bg-slate-50/30"
             >
               <h2 className="w-full text-center text-black text-3xl font-bold">
                 INSCRIPTION
