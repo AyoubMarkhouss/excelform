@@ -1,6 +1,8 @@
 import React, { FormEvent } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Home = () => {
   const router = useRouter();
   // function Submit(e) {
@@ -43,8 +45,10 @@ const Home = () => {
       // Handle error if necessary
       console.error(error);
     } finally {
-      // Set loading to false when the request completes
-      router.refresh();
+      toast.success("Envoyé avec succès !");
+      setTimeout(() => {
+        router.refresh();
+      }, 3000);
     }
   }
   return (
@@ -133,6 +137,12 @@ const Home = () => {
             </form>
           </section>
         </div>
+        <ToastContainer
+          position="bottom-right"
+          hideProgressBar={true}
+          theme="light"
+          autoClose={2000}
+        />
       </div>
     </>
   );
