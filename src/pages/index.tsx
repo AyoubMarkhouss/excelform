@@ -75,7 +75,7 @@ const Home = () => {
                   id="Nom"
                   type="text"
                   placeholder=""
-                  className="block w-full p-1 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-amber-400 dark:bg-gray-100"
+                  className="block w-full p-1 text-black rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-amber-400 dark:bg-gray-100"
                 />
               </div>
               <div>
@@ -85,7 +85,7 @@ const Home = () => {
                   id="Prenom"
                   type="text"
                   placeholder=""
-                  className="block w-full p-1 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-amber-400 dark:bg-gray-100"
+                  className="block w-full p-1 text-black rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-amber-400 dark:bg-gray-100"
                 />
               </div>
               <div>
@@ -95,7 +95,7 @@ const Home = () => {
                   id="Telephone"
                   type="tel"
                   placeholder=""
-                  className="block w-full p-1 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-amber-400 dark:bg-gray-100"
+                  className="block w-full p-1 text-black rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-amber-400 dark:bg-gray-100"
                 />
               </div>
               <div>
@@ -105,7 +105,7 @@ const Home = () => {
                   id="Email"
                   type="email"
                   placeholder=""
-                  className="block w-full p-1 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-amber-400 dark:bg-gray-100"
+                  className="block w-full p-1 text-black rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-amber-400 dark:bg-gray-100"
                 />
               </div>
               <div>
@@ -117,7 +117,7 @@ const Home = () => {
                   id="Modele"
                   type="text"
                   placeholder=""
-                  className="block w-full p-1 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-amber-400 dark:bg-gray-100"
+                  className="block w-full p-1 text-black rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-amber-400 dark:bg-gray-100"
                 />
               </div>
 
