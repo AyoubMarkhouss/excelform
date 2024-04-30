@@ -1,7 +1,7 @@
 import React, { FormEvent } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-const Home = () => {
+const test = () => {
   const router = useRouter();
   // function Submit(e) {
   //   e.preventDefault();
@@ -138,4 +138,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default test;
