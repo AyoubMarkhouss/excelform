@@ -63,7 +63,7 @@ const Home = () => {
             className="w-20"
           />
         </div>
-        <div className="h-screen md:h-full ">
+        <div className="h-[calc(100vh_-_80px)] sm:h-screen md:h-full ">
           <Image
             alt="jeep"
             src="/jeep-yellow.jpg"
