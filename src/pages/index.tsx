@@ -73,7 +73,7 @@ const Home = () => {
           />
           <Image
             alt="jeep"
-            src="/jeep-phone.jpg"
+            src="/jeep-renegade.jpg"
             height={2500}
             width={2500}
             className="h-full md:hidden bg-fixed bg-cover bg-no-repeat"
