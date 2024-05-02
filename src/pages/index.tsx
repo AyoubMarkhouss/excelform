@@ -79,10 +79,10 @@ const Home = () => {
             className="h-full md:hidden bg-fixed bg-cover bg-no-repeat"
           />
           <div className="flex justify-center items-center">
-            <h1 className="absolute text-black text-center px-4 md:px-0  md:text-start text-5xl lg:text-7xl z-40 top-64 md:top-48 lg:top-[230px] xl:top-[300px]  lg:left-10 ">
+            <h1 className="absolute text-slate-50 sm:text-black text-center px-4 md:px-0  md:text-start text-6xl lg:text-7xl z-40 top-64 md:top-48 lg:top-[230px] xl:top-[300px]  lg:left-10 ">
               Réservez votre <br /> Test Drive
             </h1>
-            <p className="absolute text-black text-center px-4 md:px-0 text-3xl lg:text-4xl z-40 top-[362px] md:top-72 lg:top-[370px] xl:top-[450px] lg:left-10 ">
+            <p className="absolute text-slate-50 sm:text-black text-center px-4 md:px-0 text-3xl lg:text-4xl z-40 top-[376px] md:top-72 lg:top-[370px] xl:top-[450px] lg:left-10 ">
               dès maintenant.
             </p>
           </div>
